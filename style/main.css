@@ -55,9 +55,32 @@
 
 @keyframes shine {
   0%,100%{
-    box-shadow: 0px 0px 32px -12px rgba(2, 238, 246, 0.5);
+    box-shadow: 0px 0px 32px -12px #02eef680;
   }
   50% {
     box-shadow: 0px 0px 32px -12px rgba(2, 238, 246, 0.5);
   }
+}
+
+button {
+  background-color: burlywood;
+  padding:10px 38px;
+  border: 1px solid;
+  border-radius: 28px;
+  color: rgb(122, 90, 51);
+  cursor: pointer;
+  transition: all .2s ease;
+  outline: 0;
+}
+
+button:not(:last-child){
+  margin-right: 20px;
+
+}
+
+button:hover,
+button:focus { 
+  border-color: 2, 238, 246, 0.5;
+  color: 2, 238, 246, 0.5;
+  box-shadow: 0px 4px 27px -12px #02eef680;
 }
