@@ -6,16 +6,25 @@ let getSeconds = document.querySelector(".seconds");
 let getTens = document.querySelector(".tens");
 let startButton = document.querySelector(".start");
 let stopButton = document.querySelector(".stop");
-let restButton = document.querySelector(".reset");
+let resetButton = document.querySelector(".reset");
 let interval; 
 
 startButton.addEventListener('click', ()=>{
   interval = setInterval(startTimer,10)
 
-})
+});
 
 stopButton.addEventListener('click', ()=>{
   clearInterval(interval)
+
+});
+
+resetButton.addEventListener('click',()=>{
+  clearInterval(interval)
+  tens = "00";
+  seconds = "00"
+  getSeconds.innerHTML = seconds;
+  getTens.innerHTML = tens; 
 
 })
 
