@@ -7,9 +7,15 @@ let getTens = document.querySelector(".tens");
 let startButton = document.querySelector(".start");
 let stopButton = document.querySelector(".stop");
 let restButton = document.querySelector(".reset");
+let interval; 
 
 startButton.addEventListener('click', ()=>{
-  setInterval(startTimer,10)
+  interval = setInterval(startTimer,10)
+
+})
+
+stopButton.addEventListener('click', ()=>{
+  clearInterval(interval)
 
 })
 
